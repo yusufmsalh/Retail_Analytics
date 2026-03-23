@@ -241,39 +241,3 @@ The test suite has **72 tests** and runs without a database or live API.
 | `TestDetectSalesSpikes` | 6 | Revenue spike detection, uniform data, column validation |
 | `TestExportAnomalies` | 3 | File creation, correct sheets, empty-data handling |
 
-### Tests skipped in this sandbox (require real infrastructure)
-
-These tests need a live database or API and are **not** in the automated suite. Run them manually on your machine after setup:
-
-```bash
-# 1. Test real DB connection (requires SQL Server + .env configured)
-python -c "
-from config.db import create_db_engine
-engine = create_db_engine()
-print('DB connection OK:', engine.url)
-"
-
-# 2. Test real API connection (requires .NET API running)
-python -c "
-from scripts.low_stock_alert import fetch_inventory_from_api
-products = fetch_inventory_from_api()
-print(f'API OK — {len(products)} products returned')
-"
-
-# 3. Test full daily report pipeline end-to-end
-python -c "
-from scripts.daily_sales_report import run_report
-from datetime import date
-path = run_report(target_date=date.today())
-print('Report saved to:', path)
-"
-
-# 4. Test full forecast pipeline end-to-end
-python -c "
-from scripts.inventory_forecast import run_forecast
-path = run_forecast(lookback_days=30, horizon=7)
-print('Forecast saved to:', path)
-"
-```
-
----
