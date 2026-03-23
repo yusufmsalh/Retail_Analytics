@@ -1,0 +1,2 @@
+2026-03-23 05:38:23 [INFO    ] daily_sales_report — Report exported → ./sample_output/daily_sales_report_20240314.xlsx
+2026-03-23 05:38:23 [INFO    ] inventory_forecast — Forecast exported → ./sample_output/inventory_forecast_20260323.xlsx

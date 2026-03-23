@@ -1,0 +1,4 @@
+order_id,order_date,product_id,product_name,sku,quantity,z_score,anomaly_type,detail,anomaly_category,stock_quantity,detected_at,sale_date,daily_revenue
+999.0,2024-03-01,1,Wireless Headphones,WH-001,500.0,5.2946513892166065,High Quantity Order,"qty=500 (μ=20.5, σ=90.6, z=5.29)",High Quantity Orders,,,,
+,,7,Legacy Item,LG-007,,,Negative Stock,stock=-3 (must be ≥ 0),Negative Stock,-3.0,2026-03-23T05:38:23.326346,,
+,,1,Wireless Headphones,WH-001,,5.2946513892166065,Sales Spike,"revenue=$44995.00 (μ=$1847.79, σ=$8149.21, z=5.29)",Sales Spikes,,,2024-03-01,44995.0
