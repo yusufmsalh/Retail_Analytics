@@ -55,7 +55,7 @@ retail_analytics/
 
 Before you start, make sure you have:
 
-- **Python 3.9+**
+- **Python 3.9+** for example 3.13.0 (As 3.9 is out of support)
 	- https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe
 - **Microsoft ODBC Driver 17 for SQL Server**
   - Windows: [Download here](https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server)
